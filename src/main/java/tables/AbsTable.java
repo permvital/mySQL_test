@@ -31,28 +31,28 @@ public abstract class AbsTable {
   }
 
   public void insertData() {
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('1', 'Васильев Юстин Игнатьевич', 'M', '1'); ");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('2', 'Мясников Вячеслав Васильевич', 'M', '2');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('3', 'Михеева Динара Васильевна', 'F', '3');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('4', 'Беляева Нева Станиславовна', 'F', '1');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('5', 'Терентьев Андрей Мэлорович', 'M', '2');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('6', 'Фомичёва Амелия Мартыновна', 'F', '3');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('7', 'Корнилов Всеволод Платонович', 'M', '1');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('8', 'Игнатьева Валерия Эдуардовна', 'F', '2');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('9', 'Соколова Дина Дмитриевна', 'F', '3');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('10', 'Комаров Исаак Филатович', 'M', '1');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('11', 'Семёнова Тамара Валерьяновна', 'F', '2');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('12', 'Котов Велор Дамирович', 'M', '3');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('13', 'Константинова Сандра Сергеевна', 'F', '1');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('14', 'Лобанова Эвелина Львовна', 'F', '2');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('15', 'Логинов Архип Проклович', 'M', '3');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`group_s` (`id`, `name`, `id_curator`) VALUES ('1', 'Первая', '1');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`group_s` (`id`, `name`, `id_curator`) VALUES ('2', 'Вторая', '2');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`group_s` (`id`, `name`, `id_curator`) VALUES ('3', 'Третья', '3');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`curator` (`id`, `fio`) VALUES ('1', 'Карпов Гордей Филатович');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`curator` (`id`, `fio`) VALUES ('2', 'Лапина Амина Максимовна');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`curator` (`id`, `fio`) VALUES ('3', 'Васильев Вениамин Сергеевич');");
-    idbConnector.executeRequest("INSERT INTO `otus`.`curator` (`id`, `fio`) VALUES ('4', 'Мамонтова Хильда Михайловна');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('1', 'Васильев Юстин Игнатьевич', 'M', '1'); ");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('2', 'Мясников Вячеслав Васильевич', 'M', '2');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('3', 'Михеева Динара Васильевна', 'F', '3');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('4', 'Беляева Нева Станиславовна', 'F', '1');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('5', 'Терентьев Андрей Мэлорович', 'M', '2');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('6', 'Фомичёва Амелия Мартыновна', 'F', '3');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('7', 'Корнилов Всеволод Платонович', 'M', '1');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('8', 'Игнатьева Валерия Эдуардовна', 'F', '2');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('9', 'Соколова Дина Дмитриевна', 'F', '3');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('10', 'Комаров Исаак Филатович', 'M', '1');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('11', 'Семёнова Тамара Валерьяновна', 'F', '2');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('12', 'Котов Велор Дамирович', 'M', '3');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('13', 'Константинова Сандра Сергеевна', 'F', '1');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('14', 'Лобанова Эвелина Львовна', 'F', '2');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`student`(`id`, `fio`, `sex`, `id_group`) VALUES('15', 'Логинов Архип Проклович', 'M', '3');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`group_s` (`id`, `name`, `id_curator`) VALUES ('1', 'Первая', '1');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`group_s` (`id`, `name`, `id_curator`) VALUES ('2', 'Вторая', '2');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`group_s` (`id`, `name`, `id_curator`) VALUES ('3', 'Третья', '3');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`curator` (`id`, `fio`) VALUES ('1', 'Карпов Гордей Филатович');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`curator` (`id`, `fio`) VALUES ('2', 'Лапина Амина Максимовна');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`curator` (`id`, `fio`) VALUES ('3', 'Васильев Вениамин Сергеевич');");
+    idbConnector.executeRequest("INSERT INTO `praktikmysql`.`curator` (`id`, `fio`) VALUES ('4', 'Мамонтова Хильда Михайловна');");
 
   }
 
