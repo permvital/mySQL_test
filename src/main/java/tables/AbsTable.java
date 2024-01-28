@@ -14,7 +14,7 @@ import java.util.Map;
 
 public abstract class AbsTable {
   public String tableName;
-  private IDBConnector idbConnector;
+  private static IDBConnector idbConnector;
 
   public AbsTable(String tableName, IDBConnector idbConnector) {
     this.tableName = tableName;
@@ -141,7 +141,10 @@ public abstract class AbsTable {
     idbConnector.executeRequest(updateRequest);
   }
 
-  public void close() {
+  public static void closeFull() {
+    idbConnector.executeRequest("drop table student");
+    idbConnector.executeRequest("drop table curator");
+    idbConnector.executeRequest("drop table group_s");
     idbConnector.close();
   }
 }

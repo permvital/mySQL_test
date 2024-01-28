@@ -4,6 +4,7 @@ import db.DBConnector;
 import db.IDBConnector;
 import dto.Group;
 import dto.Student;
+import tables.AbsTable;
 import tables.CuratorTable;
 import tables.GroupTable;
 import tables.StudentTable;
@@ -12,7 +13,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-public class Main {
+public class Main extends AbsTable {
+
+  public Main(String tableName, IDBConnector idbConnector) {
+    super(tableName, idbConnector);
+  }
 
   public static void main(String... args) {
     IDBConnector idbConnector = new DBConnector();
@@ -147,10 +152,7 @@ public class Main {
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
-      idbConnector.executeRequest("drop table student");
-      idbConnector.executeRequest("drop table curator");
-      idbConnector.executeRequest("drop table group_s");
-      idbConnector.close();
+      AbsTable.closeFull();
     }
 
   }
