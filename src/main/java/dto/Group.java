@@ -18,5 +18,7 @@ public class Group {
   public String getName() {
     return name;
   }
-  public int getIdCurator() {return id_curator;}
+  public int getIdCurator() {
+    return id_curator;
+  }
 }

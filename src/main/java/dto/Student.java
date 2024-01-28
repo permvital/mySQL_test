@@ -21,6 +21,10 @@ public class Student {
     return fio;
   }
 
-  public String getSex() {return sex;}
-  public int getIdGroup() {return id_group;}
+  public String getSex() {
+    return sex;
+  }
+  public int getIdGroup() {
+    return id_group;
+  }
 }
